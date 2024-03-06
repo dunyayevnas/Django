@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first bootstrap website</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <!--bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- google fonts link -->
+
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-white py-lg-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.png" alt="errorLogo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-uppercase" href="#">about <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">Blog <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">single-post <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">cars <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">car-single <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">booking <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">services <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">pricing <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">contact <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">team <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">reviews <span class="badge bg-secondary">pro</span></a></li>
+                            <li><a class="dropdown-item text-uppercase" href="#">faqs <span class="badge bg-secondary">pro</span></a></li>
+
+                        </ul>
+                    </li>
+                   
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn"><a href="index1.html" style="color: black;">Login</a></button>
+                    <button class="btn btn_green" type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+        <img class="position-absolute bottom-0 end-0" src="./img/car.png">
+        <img class="position-absolute bottom-0 start-0" src="./img/hero-pattern-left.png" alt="errorbg">
+        <img class="position-absolute bottom-0 end-0 bg_two" src="./img/hero-pattern-right.png" alt="errorbg">
+
+    <header class="header position-relative text-center ">
+        <h1 class="header_title display-3 pt-5" style="color: white;" >FIND YOUR <span>RENTAL CAR</span></h1>
+        <p class="lead " style="color: rgba(20, 182, 12, 0.92);" ><b>We have many best rental car collections.</b></p>
+       
+        <div class=" bg-white rounded-3 shadow p-5 position-absolute header_forms">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 p-2 text-start">
+                    <label for="" class="form-label">Vehicle Type</label>
+                    <select class="form-control" name="" id="">
+                        <option value="">Select Vehicle Type</option>
+                        <option value="">BMW x3</option>
+                        <option value="">BMw m2</option>
+                        <option value="">Ford Explore</option>
+                        <option value="">Ferrari</option>
+                    </select>
+                </div>
+                <div class="col-lg-3 col-md-6 p-2 text-start">
+                    <label for="" class="form-label">Picking Up Location</label>
+                    <input class="form-control" type="url" placeholder="Airport or anywhere">
+                </div>
+                <div class="col-lg-3 col-md-6 p-2 text-start">
+                    <label for="" class="form-label">Picking Up Date</label>
+                    <input class="form-control" type="date" >
+                </div>
+                <div class="col-lg-3 col-md-6 p-2 text-start">
+                    <label for="" class="form-label">Returning Date</label>
+                    <input class="form-control" type="date" >
+                </div>
+                <button class="text-uppercase mt-3 btn btn-lg col-12 btn-dark">find your care</button>
+                
+            </div>
+        </div>
+    </header>
+    <section class="py-lg-5">
+        <h1 class="header_title text-center">OUR RENTING <span>PROCESS</span></h1>
+        <div class="container pt-5 mt-5 progres">
+            <div class="d-flex">
+                <div class="col-lg-3 ">
+                    <div class="decart d-flex align-items-center">
+                        <div class="circle p-3 rounded-circle"></div>
+                        <div class="line" ></div>
+                    </div>
+                    <h3 class="fs-5 pt-5">CHOOSE A VEHICLE</h3>
+                    <p >Sed euismod mauris corper libero.</p>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="decart d-flex align-items-center">
+                        <div class="circle p-3  rounded-circle"></div>
+                        <div class="line" ></div>
+                    </div>
+                    <h3 class="fs-5 pt-5">PICK LOCATION & DATE</h3>
+                    <p >Nisi maecenas fermentum neque.</p>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="decart d-flex align-items-center">
+                        <div class="circle p-3  rounded-circle"></div>
+                        <div class="line" ></div>
+                    </div>
+                    <h3 class="fs-5 pt-5">BOOK YOUR CAR</h3>
+                    <p >Mauris corper accumsan urna sed.</p>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="decart d-flex align-items-center">
+                        <div class="circle p-3  rounded-circle"></div>
+                        <div class="line" ></div>
+                    </div>
+                    <h3 class="fs-5 pt-5">FINISH PROCESS</h3>
+                    <p >Orci duis ut lectus metus nam sette.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
