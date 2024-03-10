@@ -17,4 +17,4 @@ def Pupils(request):
 
 def Pupil(request, pk):
     global students
-    return render(request, 'pupil.html', context={'pupil': students[pk]})
+    return render(request, 'pupil.html', context={'pupil': students[pk-1]})
