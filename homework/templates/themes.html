@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        Theme
+        {% endblock %}
+    </title>
+    <link href = "{% static '/css/style.css' %}">
+</head>
+<body>
+        <h1>PYTHON DJANGO N28</h1>
+        {% for n in list_les %}
+        <p>{{ n }}</p>
+        {% endfor %}
+    <div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+</body>
+</html>

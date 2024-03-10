@@ -1,0 +1,23 @@
+{% extends 'themes.html' %}
+
+{% block title %}
+        Pupils
+{% endblock %}
+{% block content %}
+    <div>
+        <table>
+        <thead>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Full Ball</th>
+        </thead>
+        {% for pupil in pupils %}
+        <tbody>
+                <td>{{pupil.id}}</td>
+                <td>{{pupil.full_name}}</td>
+                <td>{{pupil.full_ball}}</td>
+        </tbody>
+        {% endfor %}
+    </table>
+    </div>
+{% endblock %}

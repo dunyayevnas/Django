@@ -1,0 +1,4 @@
+Python Basics
+Python OOP
+PostgreSQL
+Django
